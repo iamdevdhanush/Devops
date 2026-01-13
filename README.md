@@ -46,102 +46,88 @@ Devops/
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE
 └── README.md
-
 ```
 
-Sections Explained
-Linux
+---
 
+## Sections Explained
+
+### Linux
 Covers Linux fundamentals from basic commands to intermediate and advanced concepts such as file permissions and process management.
 
-Shell Scripting
-
+### Shell Scripting
 Contains beginner to intermediate shell scripts with clear comments and real-world challenges.
 
-Docker
-
+### Docker
 Introduces containerization concepts using simple Dockerfiles and small hands-on examples.
 
-Kubernetes
-
+### Kubernetes
 Includes basic Kubernetes YAML files to understand orchestration fundamentals.
 
-CI/CD
-
+### CI/CD
 Demonstrates CI/CD concepts using GitHub Actions and automation workflows.
 
-Cloud
-
+### Cloud
 Focuses on cloud fundamentals, starting with AWS basics.
 
-Suggested Learning Path
+---
 
-Linux basics (linux/basics)
+## Suggested Learning Path
+1. Linux basics (`linux/basics`)
+2. Shell scripting fundamentals (`shell-scripting/basics`)
+3. Docker and container concepts (`docker/basics`)
+4. Kubernetes basics (`kubernetes/basics`)
+5. CI/CD automation (`ci-cd/github-actions`)
+6. Cloud fundamentals (`cloud/aws`)
 
-Shell scripting fundamentals (shell-scripting/basics)
+---
 
-Docker and container concepts (docker/basics)
-
-Kubernetes basics (kubernetes/basics)
-
-CI/CD automation (ci-cd/github-actions)
-
-Cloud fundamentals (cloud/aws)
-
-Contributing
-
+## Contributing
 Contributions are welcome, especially from beginners.
 
-How to Contribute
+### How to Contribute
+1. Fork the repository
+2. Create a new branch for your changes
+3. Follow the existing folder structure
+4. Commit changes with clear messages
+5. Open a Pull Request
 
-Fork the repository
+Please read **CONTRIBUTING.md** before submitting a pull request.
 
-Create a new branch for your changes
+Beginner-friendly tasks are labeled as **good first issue**.
 
-Follow the existing folder structure
+---
 
-Commit changes with clear messages
+## Contribution Rules
+- Follow the repository structure
+- Write clean, readable, and original content
+- Add comments where required
+- Avoid large or unrelated changes in a single PR
+- Keep pull requests focused
 
-Open a Pull Request
+---
 
-Please read CONTRIBUTING.md before submitting a pull request.
-
-Beginner-friendly tasks are labeled as good first issue.
-
-Contribution Rules
-
-Follow the repository structure
-
-Write clean, readable, and original content
-
-Add comments where required
-
-Avoid large or unrelated changes in a single PR
-
-Keep pull requests focused
-
-Code of Conduct
-
+## Code of Conduct
 This project follows a Code of Conduct to maintain a respectful and inclusive environment for all contributors.
 
-Refer to CODE_OF_CONDUCT.md for details.
+Refer to **CODE_OF_CONDUCT.md** for details.
 
-License
+---
 
-This project is licensed under the MIT License.
-See the LICENSE file for more information.
+## License
+This project is licensed under the **MIT License**.  
+See the **LICENSE** file for more information.
 
-Maintainer
+---
 
-Maintained by Dhanush.
+## Maintainer
+Maintained by **Dhanush**.  
 Pull requests and issues are actively reviewed.
 
-Support
+---
 
+## Support
 If you find this repository useful:
-
-Star the repository
-
-Share it with others
-
-Contribute to help it grow
+- Star the repository
+- Share it with others
+- Contribute to help it grow

@@ -15,6 +15,18 @@ The project is designed to grow step by step—from Linux fundamentals to CI/CD 
 
 ---
 
+
+## 🧭 Learning Path (Recommended)
+
+1. Linux Fundamentals → `linux/basics`
+2. Shell Scripting → `shell-scripting`
+3. Docker Basics → `docker`
+4. Kubernetes → `kubernetes`
+5. CI/CD Pipelines → `ci-cd`
+6. Cloud & Automation → `cloud`
+
+---
+
 ## Repository Structure
 
 ```text
@@ -121,7 +133,7 @@ See the **LICENSE** file for more information.
 ---
 
 ## Maintainer
-Maintained by **Dhanush**.  
+Maintained by **@iamdevdhanush**.  
 Pull requests and issues are actively reviewed.
 
 ---

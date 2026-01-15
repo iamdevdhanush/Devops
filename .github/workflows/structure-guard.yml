@@ -1,0 +1,36 @@
+name: Enforce Repository Structure
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  structure-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check modified paths
+        run: |
+          echo "Checking modified files..."
+
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main...HEAD)
+
+          echo "Changed files:"
+          echo "$CHANGED_FILES"
+
+          INVALID_PATHS=$(echo "$CHANGED_FILES" | grep -Ev \
+            '^(level-[0-9]+-|challenges/|resources/|roadmap/|\.github/|README.md|CONTRIBUTING.md|CODE_OF_CONDUCT.md|LICENSE)')
+
+          if [ -n "$INVALID_PATHS" ]; then
+            echo "❌ Invalid paths detected:"
+            echo "$INVALID_PATHS"
+            echo ""
+            echo "Contributions must follow the level-based structure."
+            exit 1
+          fi
+
+          echo "✅ Structure check passed."

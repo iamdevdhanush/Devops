@@ -1,7 +1,8 @@
-name="Hyunwoo"
+#!/bin/bash
+name="Wooddang"
 
-if [ "$name" = "Hyunwoo" ]; then
-  echo "Welcome, Hyunwoo!"
+if [ "$name" = "Wooddang" ]; then
+  echo "Welcome, Wooddang!"
 else
   echo "Access denied"
 fi

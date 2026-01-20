@@ -1,0 +1,32 @@
+name: CI - DevOps Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install lint tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck yamllint
+
+      - name: ShellCheck (bash scripts)
+        run: |
+          if find . -name "*.sh" | grep -q .; then
+            find . -name "*.sh" -exec shellcheck {} +
+          else
+            echo "No shell scripts found"
+          fi
+
+      - name: YAML lint
+        run: |
+          yamllint .
